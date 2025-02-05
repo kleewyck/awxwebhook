@@ -17,5 +17,5 @@ jobs:
           ls ${{ github.workspace }}
       - name: Cat a file in the repository
         run: |
-          cat ${{ github.workspace/Readme.md }}    
+          cat README.md 
       - run: echo "🍏 This job's status is ${{ job.status }}."

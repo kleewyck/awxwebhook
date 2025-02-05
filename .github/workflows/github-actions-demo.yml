@@ -18,4 +18,7 @@ jobs:
       - name: Cat a file in the repository
         run: |
           cat README.md 
+      - name: Echo Bob the secret 
+        run: |
+          echo "Bob the serect is " ${{ secrets.BOB }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
